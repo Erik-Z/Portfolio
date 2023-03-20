@@ -1,4 +1,4 @@
-baseURL: "https://hugo-profile.netlify.app"
+baseURL: "http://www.erikzhou.com/"
 languageCode: "en-us"
 title: "Erik Zhou's Portfolio"
 theme: hugo-profile
@@ -121,10 +121,10 @@ params:
     title: "Erik."
     subtitle: "I build things for the web"
     content: "A passionate web app developer. I enjoy learning new technologies and building cool things."
-    image: /images/hero.svg
+    image: /images/me.jpg
     bottomImage:
       enable: true
-    # roundImage: true # Make hero image circular | default false
+      roundImage: true # Make hero image circular | default false
     button:
       enable: true
       name: "Resume"
@@ -137,19 +137,25 @@ params:
           url: https://github.com/Erik-Z
       #  - icon: fab fa-twitter
       #    url: https://example.com
-      customIcons:
-        - icon: /fav.png
-          url: "https://example.com"
+      #customIcons:
+      #  - icon: /fav.png
+      #    url: "https://example.com"
 
-  # About
+  # About [here](https://example.com) for hyperlinks
   about:
     enable: true
     title: "About Me"
-    image: "/images/me.png"
+    # image: "/images/me.png"
     content: |-
-      I am a software developer with a passion learni. I have a background in computer science, and I have a strong interest in the intersection of technology and art. I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. 
+      Hello! My name is Erik. I am a full stack software engineer with a passion for learning and a 
+      dedication to creating high-quality software solutions. 
+      I am a highly motivated and results-driven developer.
+      
+      I have a strong commitment to staying up-to-date with the latest technologies and industry trends. 
+      I am always seeking to expand my knowledge and skills, attending workshops, reading technical blogs 
+      and participating in online communities to learn and share knowledge with other professionals.
 
-      I am currently working on a project that will be used to help people find the best way to get around the city.
+      
     skills:
       enable: true
       title: "Here are a few technologies I have experience with:"
@@ -298,20 +304,21 @@ params:
           link: https://github.com/Erik-Z/Redistricter
         links:
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/hugo-profile
+            url: https://github.com/Erik-Z/Redistricter
 
-      - title: Image Converter
-        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
-        image: /images/projects/converter.jpg
+      - title: Yiikes
+        content: A 2D top-down puzzle game. The theme of the game follows World's Hardest Game.
+        image: /images/projects/yiikes.png
         featured:
-          name: Demo
-          link: https://django-converter.herokuapp.com
+          name: Try it out!
+          link: https://yiikers.firebaseapp.com/
         badges:
-          - "Django"
-          - "Bootstrap"
+          - "Javascript"
+          - "Phaser"
+          - "Firebase"
         links:
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/converter
+            url: https://github.com/Erik-Z/Yiikes
 
       - title: Le-Billion
         content: A clean and simple web forum written in Vue.js with a firebase backend.
@@ -327,12 +334,26 @@ params:
         links:
           - icon: fab fa-github
             url: https://github.com/Erik-Z/Le-Billion
+            
+      - title: Color Catcher
+        content: Color recogition game built with flutter and the flame game engine.
+        image: /images/projects/color_catcher.png
+        featured:
+          name: Download
+          link: https://play.google.com/store/apps/details?id=com.erikzdev.colorcatcher&pli=1
+        badges:
+          - "Dart"
+          - "Flutter"
+          - "Flame 🔥"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/Erik-Z/Color_Catcher
 
   #Contact
   contact:
     enable: true
     title: "Contact Me"
-    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+    content: Feel free to contact me at anytime and for whatever reason!
     email: erikzhou7@gmail.com
     btnName: E-Mail me
     formspree:
@@ -349,9 +370,9 @@ params:
       enable: false
       disableFeaturedImage: false
     socialNetworks:
-      github: https://github.com
-      linkedin: https://linkedin.com
-      # twitter: https://twitter.com
+      # github: https://github.com/Erik-Z/
+      linkedin: https://www.linkedin.com/in/erik-zhou1/
+      twitter: https://twitter.com/Erik_Zhou_
       # instagram: https://instagram.com
       # facebook: https://facebook.com
 
