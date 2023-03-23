@@ -4,7 +4,6 @@ date: 2023-03-23T19:27:00+05:30
 draft: false
 author: "Erik Zhou"
 tags:
-  - C#
   - Inheritance
   - Composition
   - Software Design
