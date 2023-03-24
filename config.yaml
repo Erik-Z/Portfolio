@@ -1,4 +1,4 @@
-baseURL: "http://www.erikzhou.com/"
+baseURL: "https://www.erikzhou.com/"
 languageCode: "en-us"
 title: "Erik Zhou's Portfolio"
 theme: hugo-profile
