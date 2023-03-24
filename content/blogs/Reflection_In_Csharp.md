@@ -1,6 +1,6 @@
 ---
 title: "Mastering Reflection in C#: A Beginner's Guide"
-date: 2023-24-03T12:30:00+05:30
+date: 2023-03-24T12:30:00+05:30
 draft: false
 # github_link: "https://github.com/gurusabarish/hugo-profile"
 author: "Erik Zhou"
@@ -8,7 +8,7 @@ tags:
   - Reflection
   - .NET
   - Runtime
-image: /images/post.jpg
+image: /images/reflection.jpg
 description: "In this blog post, we will explore the concept of reflection in C#, looking into its various features, use cases, and pros and cons. By the end of this post, you will have a solid understanding of reflection and how it can (or can't) be applied in your C# projects."
 toc: 
 ---
