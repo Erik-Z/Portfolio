@@ -23,7 +23,7 @@ markup:
       unsafe: true
 
 Menus:
-    #main:
+    main:
     - identifier: blog
       name: Blog
       title: Blog posts
