@@ -1,9 +1,9 @@
 ---
-title: "Markdown Syntax"
-date: 2021-04-03T23:29:21+05:30
-draft: false
-github_link: "https://github.com/gurusabarish/hugo-profile"
-author: "Gurusabarish"
+title: "Asynchronous Programming in C#: Beginner's Guide"
+date: 2023-24-03T23:29:21+05:30
+draft: true
+# github_link: "https://github.com/gurusabarish/hugo-profile"
+author: "Erik Zhou"
 tags:
   - Markdown syntax
   - Sample
