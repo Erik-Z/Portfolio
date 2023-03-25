@@ -63,9 +63,9 @@ Once you have an `Assembly` instance, you can access metadata such as the assemb
 Console.WriteLine($"Assembly Name: {executingAssembly.FullName}");
 Console.WriteLine($"Assembly Location: {executingAssembly.Location}");
 
-Type[] as
-{semblyTypes = executingAssembly.GetTypes();
+Type[] assemblyTypes = executingAssembly.GetTypes();
 foreach (Type type in assemblyTypes)
+{
     Console.WriteLine(type.FullName);
 }
 ```
