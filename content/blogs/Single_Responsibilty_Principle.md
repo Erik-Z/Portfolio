@@ -1,7 +1,7 @@
 ---
 title: "The Single Responsibility Principle in C#: The S of SOLID"
 date: 2023-03-25T23:29:21+05:30
-draft: true
+draft: false
 # github_link: "https://github.com/gurusabarish/hugo-profile"
 author: "Erik Zhou"
 tags:
