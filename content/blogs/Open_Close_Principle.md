@@ -9,7 +9,7 @@ tags:
   - Design Principles
   - SOLID
   - Software Design
-image: /images/post.jpg
+image: /images/Open_Close_Principle.jpg
 description: "The Open-Closed Principle (OCP) is one of the five principles of object-oriented programming and design known as SOLID. It states that software entities (classes, modules, functions, etc.) should be open for extension but closed for modification. In this blog post, we will dive deep into the Open-Closed Principle and learn how to apply it in C#."
 toc:
 ---
