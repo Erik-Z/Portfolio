@@ -1,5 +1,5 @@
 ---
-title: "# The Liskov Substitution Principle in C#: The L of SOLID"
+title: "The Liskov Substitution Principle in C#: The L of SOLID"
 date: 2023-03-28T23:29:21+05:30
 draft: false
 # github_link: "https://github.com/Erik-Z/Project"
