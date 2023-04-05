@@ -1,6 +1,6 @@
 ---
 title: "Fast Inverse Square Root: A Look into Quake's Ingenious Algorithm"
-date: 2022-04-04T19:53:33+05:30
+date: 2023-04-04T19:53:33+05:30
 draft: false
 author: "Erik Zhou"
 tags:
