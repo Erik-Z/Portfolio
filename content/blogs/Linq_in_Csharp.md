@@ -11,7 +11,6 @@ tags:
   - Query Syntax
   - Method Syntax
   - Collections
-  - Language Integrated Query
 image: /images/LINQ-in-C.png
 description: "In this blog post, I'll introduce you to LINQ, a powerful feature in C# that can make your life easier when working with data collections."
 toc: true
