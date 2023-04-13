@@ -15,68 +15,64 @@ image: /images/LINQ-in-C.png
 description: "In this blog post, I'll introduce you to LINQ, a powerful feature in C# that can make your life easier when working with data collections."
 toc: true
 ---
+Boxing and unboxing are important concepts in C# that deal with converting value types into reference types and vice versa. In this blog post, we'll take a look into the use cases of boxing and unboxing, and explore why they're useful. Keep in mind that excessive use of boxing and unboxing can lead to performance issues, so it's essential to understand when to use them appropriately.
 
-In this blog post, I'll introduce you to LINQ, a powerful feature in C# that can make your life easier when working with data collections.
+## What are Boxing and Unboxing?
 
-## What is LINQ?
-
-LINQ (Language Integrated Query) is a set of extension methods that allows you to query and manipulate data in a more readable way. It works with both in-memory data (like arrays and lists) and external data sources (such as databases or web services). LINQ provides a consistent query syntax, regardless of the data source, making it easy to switch between different data sources without changing your query logic.
-
-## Why Use LINQ?
-
-Here are a few reasons why LINQ can be a game-changer for you:
-
-1. **Readability**: LINQ queries are easy to read and understand, thanks to their declarative nature.
-2. **Flexibility**: You can use LINQ with different types of data sources, which makes it very versatile.
-3. **Less Code**: Using LINQ often results in less code, which makes your codebase easier to maintain and less error-prone.
-
-## Getting Started with LINQ
-
-To start using LINQ, you'll need to add the following `using` statement at the beginning of your C# file:
+### Boxing
+Boxing is the process of converting a value type (e.g., int, float, bool, etc.) into a reference type (object). This involves creating a new object on the heap and copying the value of the value type into that object. Here's an example:
 
 ```csharp
-using System.Linq;
+int num = 42;
+object boxedNum = num; // Boxing
 ```
 
-Now, let's look at a simple example to demonstrate how LINQ works. Suppose we have a list of integers and want to find all the odd numbers in that list. Here's how we can do it with LINQ:
+## Unboxing
+Unboxing is the reverse process of boxing, where a reference type (object) is converted back into a value type. It involves extracting the value from the object and assigning it to the value type. Here's an example:
 
 ```csharp
-List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+object obj = 42;
+int unboxedNum = (int)obj; // Unboxing
+```
 
-IEnumerable<int> oddNumbers = from num in numbers
-                                where num % 2 != 0
-                                select num;
+## Use Cases and Why It's Useful
+Boxing and unboxing can be useful in certain scenarios, such as:
 
-foreach (int oddNum in oddNumbers)
+1. <b>Storing value types in collections:</b> Before the generics were available in C#, boxing, and unboxing were used to store value types in non-generic collections like ArrayList. This lets the collection store different value types as objects.
+
+```csharp
+ArrayList list = new ArrayList();
+list.Add(42); // Implicit boxing
+int retrievedNum = (int)list[0]; // Explicit unboxing
+```
+2. <b>Using value types with interfaces:</b> If a value type implements an interface, you can box the value type to interact with methods that require the interface. This enables polymorphism with value types.
+
+```csharp
+public interface IExample
 {
-    Console.WriteLine(oddNum);
+    void DoSomething();
 }
-```
 
-In the example above, we used the LINQ query syntax to filter the odd numbers. As you can see LINQ works very similarly to how SQL works. But there's another way to write LINQ queries, called method syntax. Here's the same example using method syntax:
+public struct MyStruct : IExample
+{
+    public void DoSomething()
+    {
+        // Do Something
+    }
+}
+
+MyStruct myStruct = new MyStruct();
+IExample boxedStruct = myStruct; // Boxing
+```
+3. <b>Passing value types as objects:</b> Sometimes, you need to pass a value type as an object parameter to a method. In this case, boxing is used to convert the value type to an object.
 
 ```csharp
-IEnumerable<int> oddNumbers = numbers.Where(num => num % 2 != 0);
-
-foreach (int oddNum in oddNumbers)
+public void ProcessObject(object obj)
 {
-    Console.WriteLine(oddNum);
+    // Implementation
 }
+
+int value = 42;
+ProcessObject(value); // Implicit boxing
 ```
-
-Both query and method syntax have their pros and cons. It's up to you to decide which one you prefer, based on your specific use case and personal preferences.
-
-## Common LINQ Operations
-Here's a list of some common LINQ operations that you'll likely use frequently:
-
-- Select: Projects data into a new form.
-- Where: Filters data based on a condition.
-- OrderBy/OrderByDescending: Sorts data in ascending or descending order.
-- GroupBy: Groups data based on a specified key.
-- Join: Combines data from two collections based on a common key.
-- Distinct: Removes duplicate elements from a collection.
-- Count: Counts the number of elements in a collection.
-- Any: Determines if any element in a collection satisfies a condition.
-- All: Determines if all elements in a collection satisfy a condition.
-## Conclusion
-I hope this introduction to LINQ in C# has been helpful! By embracing LINQ in your projects, you can write more readable code.
+Although boxing and unboxing can be useful, they can also impact performance when used excessively. It's important to be careful when using them and to prefer using generics when possible to avoid unnecessary boxing and unboxing.
