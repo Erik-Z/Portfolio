@@ -1,19 +1,21 @@
 ---
 title: "LINQ in C#"
-date: 2023-04-06T19:53:33+05:30
+date: 2023-04-13T19:53:33+05:30
 draft: false
 author: "Erik Zhou"
 tags:
-  - LINQ
-  - Software Development
+  - Boxing
+  - Unboxing
+  - Value Types
+  - Reference Types
+  - Performance
+  - Generics
+  - .NET
   - Programming
-  - Data Manipulation
-  - Query Syntax
-  - Method Syntax
-  - Collections
-image: /images/LINQ-in-C.png
-description: "In this blog post, I'll introduce you to LINQ, a powerful feature in C# that can make your life easier when working with data collections."
-toc: true
+  - Concepts
+image: /images/boxing_unboxing_csharp.png
+description: "Boxing and unboxing are important concepts in C# that deal with converting value types into reference types and vice versa. In this blog post, we'll take a look into the use cases of boxing and unboxing, and explore why they're useful."
+toc:
 ---
 Boxing and unboxing are important concepts in C# that deal with converting value types into reference types and vice versa. In this blog post, we'll take a look into the use cases of boxing and unboxing, and explore why they're useful. Keep in mind that excessive use of boxing and unboxing can lead to performance issues, so it's essential to understand when to use them appropriately.
 
