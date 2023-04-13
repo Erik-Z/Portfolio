@@ -7,7 +7,13 @@ tags:
   - Boxing
   - Unboxing
   - Programming
-  = Value Types
+  - Value Types
+  - Reference Types
+  - Performance
+  - Generics
+  - .NET
+  - Programming
+  - Concepts
 image: /images/boxing_unboxing_csharp.png
 description: "Boxing and unboxing are important concepts in C# that deal with converting value types into reference types and vice versa. In this blog post, we'll take a look into the use cases of boxing and unboxing, and explore why they're useful."
 toc:
