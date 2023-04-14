@@ -352,6 +352,19 @@ params:
         links:
           - icon: fab fa-github
             url: https://github.com/Erik-Z/Color_Catcher
+      - title: Text Editor
+        content: Basic text editor made with rust and the SDL2 UI library.
+        image: /images/projects/Rust_Text_Editor.png
+        featured:
+          name: Source
+          link: https://github.com/Erik-Z/text-editor
+        badges:
+          - "Rust"
+          - "SDL2"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/Erik-Z/text-editor
+          
 
   #Contact
   contact:
