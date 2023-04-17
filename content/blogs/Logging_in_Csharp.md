@@ -28,6 +28,7 @@ In C#, logging can be implemented in a lot of ways. With the creation of .NET Co
 
 1. Create a new console application:
 
+
    ```
    dotnet new console -n LoggingExample
    cd LoggingExample
@@ -35,12 +36,14 @@ In C#, logging can be implemented in a lot of ways. With the creation of .NET Co
 
 2. Add the required NuGet packages:
 
+
    ```
    dotnet add package Microsoft.Extensions.Logging
    dotnet add package Microsoft.Extensions.Logging.Console
    ```
 
 3. Update the `Program.cs` file:
+
 
    ```csharp
    using System;
@@ -72,6 +75,7 @@ In C#, logging can be implemented in a lot of ways. With the creation of .NET Co
 
 4. Run the application:
 
+
    ```
    dotnet run
    ```
@@ -82,6 +86,7 @@ ASP.NET Core applications have built-in support for logging. You can [inject](ht
 
 1. Create a new ASP.NET Core MVC application:
 
+
     ```
     dotnet new mvc -n MvcLoggingExample
     cd MvcLoggingExample
@@ -89,28 +94,30 @@ ASP.NET Core applications have built-in support for logging. You can [inject](ht
 
 2. Update the HomeController.cs file:
 
+
     ```csharp
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Logging;
 
     namespace MvcLoggingExample.Controllers
     {
-    public class HomeController : Controller
-    {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        public class HomeController : Controller
         {
-            _logger = logger;
-        }
+            private readonly ILogger<HomeController> _logger;
 
-        public IActionResult Index()
-        {
-            _logger.LogInformation("Index action executed");
-            return View();
-        }
+            public HomeController(ILogger<HomeController> logger)
+            {
+                _logger = logger;
+            }
 
-        // Other actions
+            public IActionResult Index()
+            {
+                _logger.LogInformation("Index action executed");
+                return View();
+            }
+
+            // Other actions
+        }
     }
    ```
 
