@@ -119,7 +119,7 @@ ASP.NET Core applications have built-in support for logging. You can [inject](ht
             // Other actions
         }
     }
-   ```
+    ```
 
 ## 3. Logging Best Practices
 
