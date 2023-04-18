@@ -14,9 +14,6 @@ description: "The abstract factory pattern is a creational design pattern that h
 toc: 
 ---
 
-\```
-# The Abstract Factory Design Pattern
-
 The abstract factory pattern is a creational design pattern that helps create related objects without specifying their exact classes. This is useful when you need to create groups of objects that are interdependent. In this blog post, we will discuss the abstract factory pattern, and how to use it.
 
 ## What is the Abstract Factory Design Pattern?
