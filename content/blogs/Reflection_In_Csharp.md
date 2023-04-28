@@ -2,7 +2,6 @@
 title: "Mastering Reflection in C#: A Beginner's Guide"
 date: 2023-03-24T12:30:00+05:30
 draft: false
-# github_link: "https://github.com/gurusabarish/hugo-profile"
 author: "Erik Zhou"
 tags:
   - Reflection
