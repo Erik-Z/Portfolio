@@ -1,7 +1,7 @@
 ---
 title: "The Prototype Design Pattern"
 date: 2023-04-27T23:29:21+05:30
-draft: true
+draft: false
 author: "Erik Zhou"
 tags:
   - Prototype Design Pattern
