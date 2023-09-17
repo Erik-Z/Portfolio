@@ -178,8 +178,23 @@ params:
     enable: true
     # title: "Custom Name"
     items:
+      - job: "Informaton Technology Specialist 2 (Programming)"
+        company: "Office of the New York State Comptroller"
+        companyTitle: "OSC"
+        companyUrl: "https://www.osc.state.ny.us/"
+        date: "Sept 2023 - Present"
+        info:
+          enable: true
+          content: Worked as a software developer for the NYS Government
+        content: |
+          - Developed, tested and maintained applications, web services, and components in Microsoft C# and .NET Frameworks.
+          - Worked with different teams to build customer facing web applications for utility companies throughout North America.
+          - Optimized customer facing solutions to handle over a hundred thousand customers with data stored on relational databases (MySQL).
+          - Developed new product investment initiatives, client-requested custom modifications and enhancements.
+          
       - job: "Web Developer"
         company: "VertexOne"
+        companyTitle: "VertexOne"
         companyUrl: "https://www.vertexone.net/"
         date: "Sept 2021 - Jan 2023"
         #featuredLink:
@@ -214,6 +229,7 @@ params:
 
       - job: "Computer Science Mentor"
         company: "OYOclass"
+        companyTitle: "OYOclass"
         companyUrl: "https://oyoclass.com/"
         date: "Sept 2018 - Sept 2019"
         info:
