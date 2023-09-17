@@ -187,10 +187,9 @@ params:
           enable: true
           content: Worked as a software developer for the NYS Government
         content: |
-          - Developed, tested and maintained applications, web services, and components in Microsoft C# and .NET Frameworks.
-          - Worked with different teams to build customer facing web applications for utility companies throughout North America.
-          - Optimized customer facing solutions to handle over a hundred thousand customers with data stored on relational databases (MySQL).
-          - Developed new product investment initiatives, client-requested custom modifications and enhancements.
+          - Developed new programs and modules and made improvements to existing programs and modules.
+          - Assisted in developing training plans that enhanced the team’s ability to deliver solutions.
+          - Created design documents and other related system documentation.
           
       - job: "Web Developer"
         company: "VertexOne"
